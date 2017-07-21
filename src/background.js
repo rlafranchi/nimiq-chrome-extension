@@ -14,7 +14,7 @@ Nimiq.init($ => {
           msg: {
             established: $.consensus.established,
             peers: $.network.peerCount,
-            balance: balance.value.toFixed(2),
+            balance: Nimiq.Policy.satoshisToCoins(balance.value),
             hashrate: $.miner.hashrate,
             height: $.blockchain.height
           }
@@ -86,7 +86,7 @@ Nimiq.init($ => {
 
   const _onBalanceChanged = (newBalance) => {
     console.log(`New balance of ${$.wallet.address} is ${newBalance}.`)
-    broadcast({type: 'balance', msg: newBalance.value.toFixed(2)})
+    broadcast({type: 'balance', msg: Nimiq.Policy.satoshisToCoins(newBalance.value)})
   }
 
   const _onHeadChanged = () => {
