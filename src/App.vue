@@ -19,6 +19,9 @@
       <li>
         Balance: {{ balance }}
       </li>
+      <li>
+        <a href="https://nimiq.com" target="_blank">https://nimiq.com</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -103,6 +106,7 @@ export default {
 body {
   background-color: #042146;
   width: 250px;
+  min-height: 180px;
 }
 
 #app {
