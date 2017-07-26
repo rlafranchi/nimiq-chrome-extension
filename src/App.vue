@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img src="./assets/logo.png" width="100" height="100">
     <h3>NIMIQ</h3>
     <a href="#!" v-if="hashrate > 0" @click="stop()">Pause Mining</a>
     <a href="#!" v-if="established && hashrate === 0" @click="start()">Resume Mining</a>
@@ -39,7 +40,8 @@ export default {
       peers: 0,
       balance: 0,
       hashrate: 0,
-      height: 0
+      height: 0,
+      mining: false
     }
   },
   created () {
@@ -106,7 +108,6 @@ export default {
 body {
   background-color: #042146;
   width: 250px;
-  min-height: 180px;
 }
 
 #app {
