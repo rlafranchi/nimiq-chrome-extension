@@ -1,5 +1,7 @@
 # Nimiq Miner (Betanet)
 
+FYI - an extension with wallet management has been created by sisou - https://github.com/sisou/nimiq-wallet-extension :) good work
+
 > A Chrome Extension for mining Nimiq in the background
 
 Built with love using [Vue.js](https://vuejs.org) and [Nimiq](https://nimiq.com) by [@ralafranchi](https://twitter.com/ralafranchi)
